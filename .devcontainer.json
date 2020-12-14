@@ -1,0 +1,12 @@
+{
+  "dockerFile": "ubuntu_dockerfile",
+  "appPort": 8181,
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "johnpapa.vscode-peacock"
+  ],
+}

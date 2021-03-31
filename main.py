@@ -25,6 +25,7 @@ from core.controllers import admin
 from core.controllers import base
 from core.controllers import classifier
 from core.controllers import classroom
+from core.controllers import cloud_translate_test_page
 from core.controllers import collection_editor
 from core.controllers import collection_viewer
 from core.controllers import concept_card_viewer
@@ -242,6 +243,8 @@ URLS = MAPREDUCE_HANDLERS + [
         r'%s' % feconf.CONTRIBUTOR_DASHBOARD_URL,
         contributor_dashboard.ContributorDashboardPage),
 
+    get_redirect_route('/cloud_translate_test_page',
+        cloud_translate_test_page.CloudTranslateTestPage),
     get_redirect_route(
         '/notifications_dashboard',
         creator_dashboard.OldNotificationsDashboardRedirectPage),
